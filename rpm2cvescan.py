@@ -2,6 +2,7 @@
 import sys, getopt, os.path
 import rpm
 import subprocess
+import functools
 import xml.etree.ElementTree as ET
 
 def usage():
@@ -210,6 +211,7 @@ from collections import OrderedDict
 #
 # Created to easily store rpm info and compare rpm versions
 # =======================================================================
+@functools.total_ordering
 class my_rpm:
     def __init__(self, name_string):
         if ':' in name_string:
