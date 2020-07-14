@@ -19,7 +19,9 @@
 
 2020-07-14 [dirtyfilthy] This version has an offline mode so you don't need to run script on host
 
+pip install -r requirements
 apt install python3-rpm
+./download.sh
 
 
 ## Original repo
