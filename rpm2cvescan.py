@@ -118,8 +118,14 @@ rhelversions = ['RHEL5', 'RHEL6', 'RHEL7', 'RHEL8' ]
 base_patchfilename='./com.redhat.rhsa-'
 
 if not revision_arg:
-  rhel_version=subprocess.check_output('cat /etc/redhat-release',shell = True).split()[3]
-  rhel_major=rhel_version.split('.')[0]
+  try:
+    rhel_version=subprocess.check_output('cat /etc/redhat-release',shell = True).split()[3]
+    rhel_major=rhel_version.split('.')[0]
+  except subprocess.CalledProcessError:
+    print("No /etc/redhat-release! Did you mean to run in offline mode?")
+    print()
+    usage()
+    sys.exit(2)
 else:
   rhel_major=revision_level
 

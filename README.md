@@ -14,6 +14,10 @@
 7. [Output example](ouput-example)
 8. [End](#end)
 
+## OFFLINE MODE
+
+This version has an offline mode so you don't need to run script on host
+
 ## Original repo
 
 [bigHosting/rpm2cvescan](https://github.com/bigHosting/rpm2cvescan)
