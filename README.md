@@ -19,6 +19,9 @@
 
 2020-07-14 [dirtyfilthy] This version has an offline mode so you don't need to run script on host
 
+apt install python3-rpm
+
+
 ## Original repo
 
 [bigHosting/rpm2cvescan](https://github.com/bigHosting/rpm2cvescan)
