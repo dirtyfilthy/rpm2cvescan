@@ -192,15 +192,15 @@ ET._serialize_xml = _serialize_xml
 
 from collections import OrderedDict
 
-class OrderedXMLTreeBuilder(ET.XMLTreeBuilder):
-    def _start_list(self, tag, attrib_in):
-        fixname = self._fixname
-        tag = fixname(tag)
-        attrib = OrderedDict()
-        if attrib_in:
-            for i in range(0, len(attrib_in), 2):
-                attrib[fixname(attrib_in[i])] = self._fixtext(attrib_in[i+1])
-        return self._target.start(tag, attrib)
+# class OrderedXMLTreeBuilder(ET.XMLTreeBuilder):
+#     def _start_list(self, tag, attrib_in):
+#         fixname = self._fixname
+#         tag = fixname(tag)
+#         attrib = OrderedDict()
+#         if attrib_in:
+#             for i in range(0, len(attrib_in), 2):
+#                 attrib[fixname(attrib_in[i])] = self._fixtext(attrib_in[i+1])
+#         return self._target.start(tag, attrib)
 
 # =======================================================================
 
