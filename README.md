@@ -16,7 +16,8 @@
 
 ## OFFLINE MODE
 
-This version has an offline mode so you don't need to run script on host
+
+2020-07-14 [dirtyfilthy] This version has an offline mode so you don't need to run script on host
 
 ## Original repo
 
